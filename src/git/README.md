@@ -116,11 +116,13 @@ Add this to your `claude_desktop_config.json`:
 <summary>Using uvx</summary>
 
 ```json
+{
 "mcpServers": {
   "git": {
     "command": "uvx",
     "args": ["mcp-server-git", "--repository", "path/to/git/repo"]
   }
+}
 }
 ```
 </details>
@@ -237,15 +239,16 @@ If you are doing local development, there are two ways to test your changes:
 ### UVX
 ```json
 {
-"mcpServers": {
-  "git": {
-    "command": "uv",
-    "args": [ 
-      "--directory",
-      "/<path to mcp-servers>/mcp-servers/src/git",
-      "run",
-      "mcp-server-git"
-    ]
+  "mcpServers": {
+    "git": {
+      "command": "uv",
+      "args": [ 
+        "--directory",
+        "/<path to mcp-servers>/mcp-servers/src/git",
+        "run",
+        "mcp-server-git"
+      ]
+    }
   }
 }
 ```
